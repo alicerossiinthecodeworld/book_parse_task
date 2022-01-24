@@ -23,4 +23,4 @@ for person in people_list:
     people_with_books.append(add_books_to_people(person, next(equals_books_gen)))
 
 with open("result.json", "w") as outfile:
-    json.dump(people_with_books, outfile)
+    json.dump(people_with_books, outfile, indent=4)
